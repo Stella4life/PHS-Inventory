@@ -58,15 +58,6 @@ The project can expand beyond its initial screening categories to support more p
 - Compliance tracking for due, overdue, and completed screenings
 - Support for future analytical reporting and workflow automation
 
-## Project Structure
-```bash
-PHS-Inventory/
-│── README.md
-│── PHS Database_CandiceLee_StellaAnyokwu.pptx
-│── Candice talking points Preventative Health Screening.docx
-│── Stella talking points.docx
-```
-
 ### File Descriptions
 - **PHS Database_CandiceLee_StellaAnyokwu.pptx** - Presentation deck introducing the Preventative Health Screening Inventory, its purpose, architecture, and investment value.
 - **Candice talking points Preventative Health Screening.docx** - Supporting talking points focused on return on investment, operational value, and funding justification.
