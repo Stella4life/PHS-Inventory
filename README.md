@@ -122,6 +122,13 @@ The program can generate three CSV reports.
 File name:
 
 ```text
+
+References
+Centers for Medicare & Medicaid Services. (2026). Home. https://www.cms.gov
+Google. (2026). NotebookLM [Large language model]. https://notebooklm.google.com/
+National Committee for Quality Assurance. (2026). Home. https://www.ncqa.org
+OpenAI. (2026). ChatGPT (May 13 version) [Large language model]. https://chat.openai.com/chat
+
 phs_full_screening_report.csv
 
 
