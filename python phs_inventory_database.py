@@ -1,10 +1,10 @@
-#  Preventive Health Screening (PHS) Inventory Database
+# Preventive Health Screening (PHS) Inventory Database
 # Authors: Stella Anyokwu & Candice Lee
 # Professor Sam Davis
 # Final Project -HMI7540-01-SP26 Group Project 4
 
 # This program creates a simple centralized database for preventive health screenings.
-# It allows fictitious patient data to be entered and exported into CSV reports.
+# It allows patient data to be entered and exported into CSV reports.
 # The database supports HEDIS and CMS Star Ratings quality improvement reporting.
 
 import sqlite3
