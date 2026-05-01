@@ -127,15 +127,7 @@ Open the terminal in Visual Studio Code and run:
 python PHS_inventory_database_Project.py
 ```
 
-If that command does not work, try:
-
-```bash
-py PHS_inventory_database_Project.py
-```
-
 After the program runs, use the menu options to add sample fictitious data, enter new screening records, view records, and export CSV reports.
-
-## Program Menu
 
 When the program runs, the following menu appears:
 
