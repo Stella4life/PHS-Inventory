@@ -1,105 +1,128 @@
-Preventative Health Screening (PHS) Inventory
+# Preventive Health Screening Inventory System
 
 ## Project Overview
-This project focuses on the development of the **Preventative Health Screening (PHS) Inventory**, a centralized system designed to organize, track, and manage preventive health screening data across multiple care areas. The purpose of the project is to make preventive care more measurable, actionable, and scalable by bringing fragmented screening information into one structured inventory.
 
-Many healthcare organizations already have the data needed to close preventive screening gaps, but the information is often scattered across claims systems, electronic health records, laboratory reports, and internal tracking tools. As a result, patients may be missed, outreach efforts may be duplicated, and care teams may lack a clear view of which screenings are due, overdue, or completed. The PHS Inventory is intended to solve this problem by consolidating screening data into one accessible system that supports quality improvement, operational efficiency, and stronger healthcare outcomes.
+The Preventive Health Screening Inventory System is a centralized database project designed to manage, track, and report completed preventive health screenings. The purpose of the project is to support healthcare quality improvement by organizing screening data from multiple collection points, including physician offices, laboratories, radiology centers, endoscopy suites, and eye care centers.
 
-The project begins with major preventive screening categories that are commonly tied to healthcare quality reporting and compliance goals:
-- **Colorectal screenings:** Colonoscopy, FIT, Cologuard
-- **Women’s health screenings:** Mammograms, Pap smears
-- **Cardiovascular screenings:** Blood pressure, comprehensive lab panels
-- **Diabetes care screenings:** A1C labs, retinal exams
+This system helps provide a clear view of each patient’s preventive screening status and supports reporting needs related to HEDIS measures and CMS Star Ratings. By maintaining a centralized inventory of completed screenings, healthcare teams can identify compliant patients, patients needing follow-up, and opportunities to improve preventive care outcomes.
 
-By centralizing these data points, the PHS Inventory supports preventive care completion, tracks compliance at both the patient and provider level, and helps improve performance on quality benchmarks such as **HEDIS** and **CMS Star Ratings**.
+## Purpose of the Project
 
-## Objectives
-- Build a centralized inventory for preventive health screening data.
-- Aggregate screening data from multiple sources such as claims, EHRs, labs, and reports.
-- Standardize and organize screening information by patient and measure.
-- Identify which patients are due, overdue, or compliant with screening requirements.
-- Reduce manual tracking, duplicate outreach, and incomplete reporting.
-- Support quality improvement initiatives tied to HEDIS and CMS Star Ratings.
-- Create a scalable system that can later expand to include dashboards, alerts, advanced reporting, and workflow automation.
+Preventive health screenings are important for early detection, chronic disease management, and improved patient outcomes. However, screening information is often collected from different locations and may not always be stored in one centralized system.
 
-## Target Users
-- **Healthcare Providers:** To monitor patient screening compliance, close care gaps, and improve preventive care follow-up.
-- **Care Teams and Quality Departments:** To reduce time spent reconciling data and improve outreach coordination.
-- **Health Plans and Insurance Organizations:** To strengthen quality ratings, reimbursement performance, and compliance reporting.
-- **Patients:** To benefit from earlier detection, better preventive care access, and improved long-term outcomes.
+This project addresses that problem by creating a simple database that can capture screening results, organize patient records, update compliance status, and generate CSV reports for quality improvement review.
 
-## Tools & Technologies
-- Microsoft PowerPoint
-- Microsoft Word
-- GitHub for collaboration and version control
-- Health data sources such as claims, EHRs, lab reports, and internal quality reports
-- Future potential tools may include dashboards, analytics platforms, and workflow automation systems
+## Flowchart Summary
 
-## Project Value
-The PHS Inventory is designed to create value in several important ways:
+The project follows the workflow shown in the Preventive Health Screening Inventory flowchart.
 
-### Quality Performance Improvement
-Improving preventive screening completion rates can strengthen HEDIS scores and CMS Star Ratings. Higher quality performance can improve bonus eligibility, reimbursement opportunities, and plan competitiveness.
+The process begins in the physician office, where the patient’s screening needs are reviewed. If the patient is due for a preventive screening, the provider orders or refers the patient for the appropriate test. The order is then sent to the correct collection hub, such as a laboratory, radiology center, endoscopy suite, or eye care center.
 
-### Operational Efficiency
-The system reduces the need for manual chart chasing, fragmented spreadsheets, and duplicate outreach efforts. It creates one central view of screening activity so that staff can work more efficiently.
+Once the screening is performed, the completed result is reviewed. If follow-up is needed, the patient may return for additional screening or evaluation. If the screening is completed and valid, the result is sent to the Preventive Health Screening Inventory database. The database stores the result, updates the patient’s compliance status, and generates reports that can be used for HEDIS and CMS Star Ratings quality improvement activities.
 
-### Cost Reduction Through Prevention
-Preventive screenings support earlier detection of chronic conditions and cancers, which can reduce downstream treatment costs and improve patient outcomes.
+## Preventive Screenings Included
 
-### Scalability
-The project can expand beyond its initial screening categories to support more preventive measures, automated alerts, reporting tools, and broader quality improvement initiatives.
+The system is designed to manage several major categories of preventive health screenings.
 
-## Core Features
-- Centralized preventive screening inventory
-- Patient-level and measure-level screening tracking
-- Data aggregation from multiple healthcare information sources
-- Standardization of preventive screening records
-- Compliance tracking for due, overdue, and completed screenings
-- Support for future analytical reporting and workflow automation
+### Colorectal Cancer Screening
 
-## Workflow Concept
-The PHS Inventory is designed to follow a simple preventive screening data workflow:
-1. Pull screening data from claims, EHRs, lab systems, and reports.
-2. Standardize the data for consistency.
-3. Match the data to the correct patient and preventive measure.
-4. Apply rules to determine whether the screening is complete, due, or overdue.
-5. Store the data for future reporting, analytics, and follow-up workflows.
+Examples include:
 
-## Why This Project Matters
-Preventive screening data is often fragmented across systems and departments. Without a centralized inventory, organizations may struggle to identify care gaps, meet compliance goals, and coordinate timely patient outreach. This project matters because it transforms scattered data into organized action.
+- Colonoscopy
+- FIT test
+- Cologuard
 
-By creating one source of truth for preventive screening compliance, the PHS Inventory supports:
-- Better preventive care tracking
-- Better quality performance
-- Better operational efficiency
-- Better financial performance
-- Better patient outcomes
+### Women’s Health Screening
 
-## Future Enhancements
-- Interactive dashboards for care teams and leadership
-- Automated reminders and alerts for overdue screenings
-- Expanded screening categories beyond the initial measures
-- Advanced reporting for quality improvement programs
-- Workflow automation for outreach and follow-up
-- Integration with broader population health management strategies
+Examples include:
 
-## References
-- National Committee for Quality Assurance (NCQA): https://www.ncqa.org
-- Centers for Medicare & Medicaid Services (CMS): https://www.cms.gov
+- Mammogram
+- Pap smear
 
-## Contributing
-If you would like to contribute to this project:
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature-branch`
-3. Commit your changes: `git commit -m "Added new feature"`
-4. Push to GitHub: `git push origin feature-branch`
-5. Open a pull request.
+### Cardiovascular Assessment
 
-## Authors
-- Stella Anyokwu
-- Candice Lee
+Examples include:
 
+- Blood pressure screening
+- Comprehensive lab panel
+
+### Diabetic Management
+
+Examples include:
+
+- A1C lab
+- Diabetic retinal exam
+
+## Project Features
+
+This Python program allows the user to:
+
+- Create a centralized SQLite database
+- Add fictitious patient screening data
+- Manually enter new preventive screening records
+- View all screening records in the database
+- Track the collection hub where the screening was completed
+- Store provider information
+- Record screening type, result, date, and compliance status
+- Export a full screening report to CSV
+- Export a HEDIS/CMS compliance summary report to CSV
+- Export a follow-up report for patients who need additional action
+
+## Database Fields
+
+The database table is named `screenings`.
+
+The table includes the following fields:
+
+| Field Name | Description |
+|---|---|
+| screening_id | Unique ID assigned to each screening record |
+| patient_first_name | Patient’s first name |
+| patient_last_name | Patient’s last name |
+| date_of_birth | Patient’s date of birth |
+| patient_gender | Patient’s gender |
+| collection_hub | Location where the screening was collected or performed |
+| provider_name | Provider responsible for the screening |
+| screening_type | Type of preventive screening completed |
+| screening_result | Result of the screening |
+| screening_date | Date the screening was completed |
+| compliance_status | Patient’s compliance status |
+| measure_type | Quality measure category |
+| report_year | Reporting year for HEDIS/CMS review |
+
+## Collection Hubs
+
+The system includes collection hubs that match the flowchart process. These are the locations where screenings may be completed before being uploaded to the database.
+
+Examples include:
+
+- Physician Office
+- Lab
+- Radiology Center
+- Endoscopy Suite
+- Eye Care Center
+
+## Compliance Status Options
+
+The system allows the following compliance status values:
+
+- Compliant
+- Needs Follow-up
+- Non-Compliant
+- Pending
+
+These values help identify whether a patient has completed a required screening or still needs additional action.
+
+## Reports Generated
+
+The program can generate three CSV reports.
+
+### 1. Full Screening Report
+
+File name:
+
+```text
+phs_full_screening_report.csv
 
 
 
