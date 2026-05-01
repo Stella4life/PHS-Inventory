@@ -1,3 +1,8 @@
+# Preventive Health Screening (PHS) Inventory Database
+# Authors: Stella Anyokwu & Candice Lee
+# Professor Sam Davis
+# Final Project -HMI7540-01-SP26 Group Project 4
+
 # Preventive Health Screening Inventory Database
 # This program creates a simple centralized database for completed preventive health screenings.
 # It stores only compliant/completed screening records and exports CSV reports.
