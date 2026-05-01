@@ -4,7 +4,7 @@
 
 The Preventive Health Screening Inventory System is a centralized database project designed to manage, track, and report completed preventive health screenings. The purpose of the project is to support healthcare quality improvement by organizing screening data from multiple collection points, including physician offices, laboratories, radiology centers, endoscopy suites, and eye care centers.
 
-This system helps provide a clear view of each patient’s preventive screening status and supports reporting needs related to HEDIS measures and CMS Star Ratings. By maintaining a centralized inventory of completed screenings, healthcare teams can identify compliant patients, patients needing follow-up, and opportunities to improve preventive care outcomes.
+This system helps provide a clear view of each patient’s preventive screening status and supports reporting needs related to HEDIS measures and CMS Star Ratings. By maintaining a centralized inventory of completed screenings, healthcare teams can identify compliant patients, organize preventive screening data into a format that can be reviewed, summarized, and exported as CSV reports to improve preventive care outcomes.
 
 ## Purpose of the Project
 
@@ -19,6 +19,13 @@ The project follows the workflow shown in the Preventive Health Screening Invent
 The process begins in the physician office, where the patient’s screening needs are reviewed. If the patient is due for a preventive screening, the provider orders or refers the patient for the appropriate test. The order is then sent to the correct collection hub, such as a laboratory, radiology center, endoscopy suite, or eye care center.
 
 Once the screening is performed, the completed result is reviewed. If follow-up is needed, the patient may return for additional screening or evaluation. If the screening is completed and valid, the result is sent to the Preventive Health Screening Inventory database. The database stores the result, updates the patient’s compliance status, and generates reports that can be used for HEDIS and CMS Star Ratings quality improvement activities.
+
+## Sample Data
+
+The program includes fictitious patient screening records for demonstration purposes only. These records do not represent real patients.
+
+The sample data includes completed screenings such as mammograms, Pap smears, colonoscopies, FIT tests, Cologuard tests, blood pressure screenings, comprehensive lab panels, A1C labs, and diabetic retinal exams. Each sample record is assigned a compliance status of **Compliant** because the database is designed to store completed screening results only.
+
 
 ## Preventive Screenings Included
 
@@ -55,7 +62,7 @@ Examples include:
 
 ## Project Features
 
-This Python program allows the user to:
+This program allows the user to:
 
 - Create a centralized SQLite database
 - Add fictitious patient screening data
@@ -92,7 +99,7 @@ The table includes the following fields:
 
 ## Collection Hubs
 
-The system includes collection hubs that match the flowchart process. These are the locations where screenings may be completed before being uploaded to the database.
+These are the locations where screenings may be completed before being uploaded to the database.
 
 Examples include:
 
@@ -102,16 +109,29 @@ Examples include:
 - Endoscopy Suite
 - Eye Care Center
 
-## Compliance Status Options
+## Program Menu
 
-The system allows the following compliance status values:
+When the program runs, the following menu appears:
 
-- Compliant
-- Needs Follow-up
-- Non-Compliant
-- Pending
+```text
+Preventive Health Screening Inventory System
+1. Add sample fictitious data
+2. Enter new screening record
+3. View all screening records
+4. Export full screening report to CSV
+5. Export HEDIS/CMS compliance report to CSV
+6. Export compliant patients report to CSV
+7. Exit program
+```
 
-These values help identify whether a patient has completed a required screening or still needs additional action.
+The user can select a number from the menu to perform the desired action.
+
+
+## Importance to Healthcare Quality
+
+This project supports healthcare quality improvement by making completed preventive screening information easier to organize and review. A centralized screening inventory can help healthcare organizations monitor completed screenings, prepare reports, and support quality measure review.
+
+The system may also help healthcare teams evaluate screening activity by measure type, provider, collection hub, and reporting year. This information can support better planning, improved documentation, and stronger reporting for HEDIS and CMS Star Ratings.
 
 ## Reports Generated
 
@@ -123,13 +143,18 @@ File name:
 
 ```text
 
-References
-Centers for Medicare & Medicaid Services. (2026). Home. https://www.cms.gov
-Google. (2026). NotebookLM [Large language model]. https://notebooklm.google.com/
-National Committee for Quality Assurance. (2026). Home. https://www.ncqa.org
-OpenAI. (2026). ChatGPT (May 13 version) [Large language model]. https://chat.openai.com/chat
-
 phs_full_screening_report.csv
+```
+
+## References
+
+Centers for Medicare & Medicaid Services. (2026). *Home*. https://www.cms.gov
+
+Google. (2026). *NotebookLM* [Large language model]. https://notebooklm.google.com/
+
+National Committee for Quality Assurance. (2026). *Home*. https://www.ncqa.org
+
+OpenAI. (2026). *ChatGPT (May 13 version)* [Large language model]. https://chat.openai.com/chat
 
 
 
